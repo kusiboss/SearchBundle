@@ -11,7 +11,7 @@ use araise\SearchBundle\Tests\App\Entity\Company;
 
 class SearchTest extends AbstractSeaarchTest
 {
-    public function testSearchAll()
+    public function testSearchAll(): void
     {
         $this->createEntities();
 
@@ -22,7 +22,7 @@ class SearchTest extends AbstractSeaarchTest
         self::assertSame(6, count($result));
     }
 
-    public function testSearchEntity()
+    public function testSearchEntity(): void
     {
         $this->createEntities();
 
@@ -33,7 +33,7 @@ class SearchTest extends AbstractSeaarchTest
         self::assertSame(1, count($result));
     }
 
-    public function testSearchGroup()
+    public function testSearchGroup(): void
     {
         $this->createEntities();
 

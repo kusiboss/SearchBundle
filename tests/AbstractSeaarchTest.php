@@ -15,7 +15,7 @@ abstract class AbstractSeaarchTest extends KernelTestCase
     use Factories;
     use ResetDatabase;
 
-    protected function createEntities()
+    protected function createEntities(): void
     {
         CompanyFactory::createOne([
             'name' => 'whatwedo GmbH',
